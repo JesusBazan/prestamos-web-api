@@ -4,7 +4,7 @@ const mysqlConnection = mysql.createConnection({
   host: 'dbprestamos.c48curxpcfx0.us-east-2.rds.amazonaws.com',
   user: 'admin',
   password: 'admin1234',
-  database: 'prueba',
+  database: 'LENDERS',
   multipleStatements: true
 });
 
