@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Routes
 app.use(require('./src/routes/productos'));
-// app.use(require('./src/routes/usuarios'));
+app.use(require('./src/routes/usuarios'));
 // app.use(require('./src/routes/anuncios'));
 // app.use(require('./src/routes/materias'));
 // app.use(require('./src/routes/libros'));
