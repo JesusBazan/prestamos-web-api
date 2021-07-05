@@ -60,7 +60,7 @@ router.post('/insertarProducto', (req, res) => {
 });
 
 // UPDATE An usuario
-router.put('/actualizarUsuario/:id', (req, res) => {
+router.put('/actualizarProducto/:id', (req, res) => {
   const { nombre, descripcion, fotografia, idCatalogo } = req.body;
   const { id } = req.params;
   const query = `
