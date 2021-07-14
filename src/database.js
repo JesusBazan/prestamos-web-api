@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const mysqlConnection = mysql.createConnection({
-  host: 'dbprestamos.c48curxpcfx0.us-east-2.rds.amazonaws.com',
+  host: 'prestamos-mysql-database.cdl4oynblaj7.us-east-1.rds.amazonaws.com',
   user: 'admin',
-  password: 'admin1234',
-  database: 'LENDERS',
+  password: 'admin12345',
+  database: 'lenders',
   multipleStatements: true
 });
 
