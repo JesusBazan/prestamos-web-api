@@ -16,8 +16,9 @@ router.get('/productos', (req, res) => {
 
 // GET An usuario
 router.get('/buscarProducto/:id', (req, res) => {
-  const { id } = req.params; 
-  mysqlConnection.query('SELECT * FROM producto WHERE id_producto = ?', [id], (err, rows, fields) => {
+  var { id } = req.params;
+  id = '%'+id+'%';
+  mysqlConnection.query('SELECT * FROM producto WHERE nom_producto LIKE ?', [id], (err, rows, fields) => {
     if (!err) {
       res.json(rows);
     } else {
